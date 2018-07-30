@@ -1,4 +1,4 @@
-defmodule ElixirGraphql.Schema.Types do
+defmodule ElixirGraphqlWeb.Schema.Types do
   use Absinthe.Schema.Notation
   use Absinthe.Ecto, repo: ElixirGraphql.Repo
   import_types(Absinthe.Type.Custom)

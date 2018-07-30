@@ -1,6 +1,6 @@
-defmodule ElixirGraphql.Schema do
+defmodule ElixirGraphqlWeb.Schema do
   use Absinthe.Schema
-  import_types(ElixirGraphql.Schema.Types)
+  import_types(ElixirGraphqlWeb.Schema.Types)
 
   query do
     field :watch, :watch do

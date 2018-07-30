@@ -12,6 +12,6 @@ defmodule ElixirGraphqlWeb.Router do
   forward(
     "/graphiql",
     Absinthe.Plug.GraphiQL,
-    schema: ElixirGraphql.Schema
+    schema: ElixirGraphqlWeb.Schema
   )
 end
