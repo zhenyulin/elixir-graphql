@@ -1,6 +1,7 @@
 defmodule ElixirGraphql.Schema.Types do
   use Absinthe.Schema.Notation
   use Absinthe.Ecto, repo: ElixirGraphql.Repo
+  import_types(Absinthe.Type.Custom)
 
   object :watch do
     field(:id, :id)
@@ -16,7 +17,7 @@ defmodule ElixirGraphql.Schema.Types do
   end
 
   object :auction do
-    # field(:date, :date)
+    field(:date, :date)
     field(:host, :string)
   end
 end
